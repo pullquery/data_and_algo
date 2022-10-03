@@ -6,4 +6,4 @@ add_executable(main
         lib/lib.cpp
         lib/lib.h
         src/sort.cpp
-        )
+        src/data.cpp)
