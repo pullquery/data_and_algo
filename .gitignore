@@ -1,0 +1,12 @@
+# Build directories
+build/
+cmake-build-debug/
+
+# Editor
+.idea/
+.vscode/
+
+# Build files
+*.o
+*.exe
+*.out
