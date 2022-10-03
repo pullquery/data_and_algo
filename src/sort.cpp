@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "lib.h"
+#include "../lib/lib.h"
 
 void bubbleSort(int arr[], int len) {
     for (int i = 0; i < len; ++i) {
