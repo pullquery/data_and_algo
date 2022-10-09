@@ -6,4 +6,4 @@ add_executable(main
         lib/lib.cpp
         lib/lib.h
         src/sort.cpp
-        src/list.cpp src/stack.cpp)
+        src/linked_list.cpp src/stack.cpp)
