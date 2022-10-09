@@ -12,6 +12,19 @@ void bubbleSort(int arr[], int len) {
     }
 }
 
+void insertionSort(int arr[], int len) {
+    for (int i = 1; i < len; ++i) {
+        int key = arr[i];
+
+        int j;
+        for (j = i - 1; j >= 0 && compare(arr[j], key) > 0; --j) {
+            arr[j + 1] = arr[j];
+        }
+
+        arr[j + 1] = key;
+    }
+}
+
 void quickSort(int arr[], int left, int right) {
     int pivot = left;
     int l = left;
@@ -27,16 +40,4 @@ void quickSort(int arr[], int left, int right) {
         quickSort(arr, left, r - 1);
         quickSort(arr, r + 1, right);
     }
-}
-
-int main() {
-    int len = 10;
-    int *arr = new int[len]{};
-
-    generate(arr, len);
-    print(arr, len);
-
-//    bubbleSort(arr, len);
-    quickSort(arr, 0, len - 1);
-    print(arr, len);
 }
